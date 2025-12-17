@@ -23,12 +23,12 @@
 
 ## 3️⃣ Funciones de memoria (punteros crudos)
 
-- [ ] ft_memset
-- [ ] ft_bzero
-- [ ] ft_memcpy
-- [ ] ft_memmove
-- [ ] ft_memchr
-- [ ] ft_memcmp
+- [X] ft_memset
+- [x] ft_bzero
+- [x] ft_memcpy
+- [X] ft_memmove
+- [x] ft_memchr
+- [x] ft_memcmp
 
 ---
 
