@@ -1,21 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dzafra <dzafra@student.42barcelona.co      +#+  +:+       +#+        */
+/*   By: dzafra <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/18 19:50:03 by dzafra            #+#    #+#             */
-/*   Updated: 2025/12/18 19:50:07 by dzafra           ###   ########.fr       */
+/*   Created: 2025/11/09 14:58:09 by dzafra            #+#    #+#             */
+/*   Updated: 2025/11/09 15:09:56 by dzafra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlen(const char *s)
+unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
-	size_t	i;
+	unsigned int	i;
 
 	i = 0;
-	while (s[i])
+	while ((i + 1) < size && src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = '\0';
+	i = 0;
+	while (src[i] != '\0')
 		i++;
 	return (i);
 }

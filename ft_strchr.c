@@ -1,21 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dzafra <dzafra@student.42barcelona.co      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/18 19:50:03 by dzafra            #+#    #+#             */
-/*   Updated: 2025/12/18 19:50:07 by dzafra           ###   ########.fr       */
+/*   Created: 2025/12/18 19:18:16 by dzafra            #+#    #+#             */
+/*   Updated: 2025/12/18 19:32:03 by dzafra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlen(const char *s)
+char	*ft_strchr(const char *s, int c)
 {
-	size_t	i;
+	int				i;
+	unsigned char	ch;
 
+	ch = (unsigned char) c;
 	i = 0;
-	while (s[i])
+	while (s[i] != '\0')
+	{
+		if ((unsigned char)s[i] == ch)
+		{
+			return ((char *)&s[i]);
+		}
 		i++;
-	return (i);
+	}
+	if (ch == '\0')
+		return ((char *)&s[i]);
+	return (NULL);
 }
