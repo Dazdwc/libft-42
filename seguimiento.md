@@ -35,12 +35,12 @@
 ## 4️⃣ Funciones de strings complejas
 👉 Strings + `\0` + punteros + límites.
 
-- [ ] ft_strlcpy
-- [ ] ft_strlcat
-- [ ] ft_strchr
-- [ ] ft_strrchr
-- [ ] ft_strncmp
-- [ ] ft_strnstr
+- [x] ft_strlcpy
+- [x] ft_strlcat
+- [x] ft_strchr
+- [x] ft_strrchr
+- [x] ft_strncmp
+- [x] ft_strnstr
 
 ---
 
@@ -62,10 +62,10 @@
 ## 6️⃣ Funciones de salida por file descriptor (fd)
 👉 Escritura en fd, sin malloc, pero con cuidado de errores.
 
-- [ ] ft_putchar_fd
-- [ ] ft_putstr_fd
-- [ ] ft_putendl_fd
-- [ ] ft_putnbr_fd
+- [x] ft_putchar_fd
+- [x] ft_putstr_fd
+- [x] ft_putendl_fd
+- [x] ft_putnbr_fd
 
 📌 **Notas importantes de esta familia:**
 - Usan `write`
@@ -75,15 +75,15 @@
 - Son ideales para afianzar recursividad (`ft_putnbr_fd`)
 ---
 
-## 7️⃣ Bonus – Listas enlazadas
+## 7️⃣  Listas enlazadas
 
 
-- [ ] ft_lstnew
-- [ ] ft_lstadd_front
-- [ ] ft_lstsize
-- [ ] ft_lstlast
-- [ ] ft_lstadd_back
-- [ ] ft_lstdelone
-- [ ] ft_lstclear
-- [ ] ft_lstiter
-- [ ] ft_lstmap
+- [x] ft_lstnew
+- [x] ft_lstadd_front
+- [x] ft_lstsize
+- [x] ft_lstlast
+- [x] ft_lstadd_back
+- [x] ft_lstdelone
+- [x] ft_lstclear
+- [x] ft_lstiter
+- [x] ft_lstmap
