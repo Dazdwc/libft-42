@@ -47,15 +47,15 @@
 ## 5️⃣ Funciones con asignación dinámica (malloc)
 👉 **No avanzar sin entender bien heap, leaks y NULL.**
 
-- [ ] ft_calloc
-- [ ] ft_strdup
+- [x] ft_calloc
+- [x] ft_strdup
 - [ ] ft_substr
-- [ ] ft_strjoin
+- [x] ft_strjoin
 - [ ] ft_strtrim
 - [ ] ft_split
 - [ ] ft_itoa
 - [ ] ft_strmapi
-- [ ] ft_striteri
+- [x] ft_striteri
 
 ---
 
