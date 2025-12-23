@@ -6,9 +6,11 @@
 /*   By: dzafra <dzafra@student.42barcelona.co      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/18 19:50:03 by dzafra            #+#    #+#             */
-/*   Updated: 2025/12/18 19:50:07 by dzafra           ###   ########.fr       */
+/*   Updated: 2025/12/23 20:53:48 by dzafra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {

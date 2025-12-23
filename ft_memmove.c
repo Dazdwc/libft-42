@@ -6,9 +6,11 @@
 /*   By: dzafra <dzafra@student.42barcelona.co      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/18 19:49:36 by dzafra            #+#    #+#             */
-/*   Updated: 2025/12/18 19:49:48 by dzafra           ###   ########.fr       */
+/*   Updated: 2025/12/23 20:52:28 by dzafra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
@@ -24,7 +26,10 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	{
 		i = 0;
 		while (i < len)
-			d[i++] = s[i];
+		{
+			d[i] = s[i];
+			i++;
+		}
 	}
 	else
 		while (len--)

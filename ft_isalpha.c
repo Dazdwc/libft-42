@@ -6,11 +6,9 @@
 /*   By: dzafra <dzafra@student.42barcelona.co      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 20:30:43 by dzafra            #+#    #+#             */
-/*   Updated: 2025/12/11 21:06:03 by dzafra           ###   ########.fr       */
+/*   Updated: 2025/12/23 20:17:42 by dzafra           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 static int	ft_isupper(int c)
 {
