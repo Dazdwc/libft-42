@@ -6,7 +6,7 @@
 /*   By: Daniel Z <daniel.zafra@student.42barcelon  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/22 17:45:18 by Daniel Z          #+#    #+#             */
-/*   Updated: 2025/12/22 17:47:58 by Daniel Z         ###   ########.fr       */
+/*   Updated: 2025/12/25 09:54:00 by Daniel Z         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,5 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		return ;
 	}
 	last = ft_lstlast(*lst);
-	new->next = NULL;
 	last->next = new;
 }

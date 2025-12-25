@@ -6,62 +6,35 @@
 /*   By: dzafra <dzafra@student.42barcelona.co      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/18 20:54:47 by dzafra            #+#    #+#             */
-/*   Updated: 2025/12/18 20:54:51 by dzafra           ###   ########.fr       */
+/*   Updated: 2025/12/25 09:36:59 by Daniel Z         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
-int	ft_strslen(int size, char **strs, char *sep)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int	len;
-	int	sep_len;
-	int	i;
+	char	*str;
+	size_t	i;
+	size_t	j;
 
-	len = 0;
-	sep_len = 0;
-	while (sep[sep_len])
-		sep_len++;
-	while (size > 0)
-	{
-		i = 0;
-		while (strs[size - 1][i])
-		{
-			i++;
-			len++;
-		}
-		if ((size - 1) > 0)
-			len += sep_len;
-		size--;
-	}
-	return (len + 1);
-}
-
-char	*ft_strjoin(int size, char **strs, char *sep)
-{
-	char	*ptr;
-	int		i;
-	int		j;
-	int		major_while_index;
-
+	if (!s1 || !s2)
+		return (NULL);
+	str = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
+	if (!str)
+		return (NULL);
 	i = 0;
-	major_while_index = -1;
-	ptr = malloc(ft_strslen(size, strs, sep) * sizeof(char));
-	while (size > ++major_while_index)
+	while (s1[i])
 	{
-		j = -1;
-		while (strs[major_while_index][++j])
-		{
-			ptr[i] = strs[major_while_index][j];
-			i++;
-		}
-		j = -1;
-		while (sep[++j] && (size - 1) > major_while_index)
-		{
-			ptr[i] = sep[j];
-			i++;
-		}
+		str[i] = s1[i];
+		i++;
 	}
-	ptr[i] = 0;
-	return (ptr);
+	j = 0;
+	while (s2[j])
+	{
+		str[i + j] = s2[j];
+		j++;
+	}
+	str[i + j] = '\0';
+	return (str);
 }
